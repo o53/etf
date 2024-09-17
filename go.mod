@@ -1,3 +1,3 @@
 module github.com/o53/etf
 
-go 1.18.1
+go 1.18
