@@ -1,3 +1,3 @@
-module github.com/iho/etf
+module github.com/o53/etf
 
 go 1.22.3

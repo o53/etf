@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/iho/etf"
+	"github.com/o53/etf"
 )
 
 func invokeErl(term string) ([]byte, error) {
@@ -55,8 +55,8 @@ func ExampleEncodeErlTerm() {
 		etf.Float(3.14),
 		etf.Integer(42),
 		etf.Map{
-			"key1": etf.Atom("value1"),
-			"key2": etf.Atom("value2"),
+			etf.MapElem{Key: etf.Atom("key1"), Value: etf.Atom("value1")},
+			etf.MapElem{Key: etf.Atom("key2"), Value: etf.Atom("value2")}
 		},
 	}
 	_, err := etf.EncodeErlTerm(term, true)

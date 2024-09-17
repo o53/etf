@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/iho/etf"
+	"github.com/o53/etf"
 )
 
 func main() {
